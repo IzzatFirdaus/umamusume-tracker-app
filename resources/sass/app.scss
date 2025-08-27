@@ -1,7 +1,4 @@
 
-// Import Bootstrap
-@import "~bootstrap/scss/bootstrap";
-
 // MYDS Colors (Primitive & Tokens)
 $myds-blue: #2563EB;
 $myds-success: #388E3C;
@@ -20,11 +17,15 @@ $txt-muted: $myds-gray;
 $font-heading: 'Poppins', Arial, sans-serif;
 $font-body: 'Inter', Arial, sans-serif;
 
-// Override Bootstrap variables
-$primary: $myds-blue;
-$success: $myds-success;
-$danger: $myds-danger;
-$warning: $myds-warning;
+// Use precompiled Bootstrap CSS and set CSS variables for theme colors
+:root {
+  --bs-primary: #{$myds-blue};
+  --bs-success: #{$myds-success};
+  --bs-danger: #{$myds-danger};
+  --bs-warning: #{$myds-warning};
+}
+
+@import "~bootstrap/dist/css/bootstrap.css";
 
 // MYDS Accessibility Styles
 .skip-link {
