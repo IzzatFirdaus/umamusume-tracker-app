@@ -1,0 +1,51 @@
+/* MYDS Accessibility Styles */
+.skip-link {
+	position: absolute;
+	left: 0;
+	top: -40px;
+	background: #2563EB;
+	color: #FFFFFF;
+	padding: 8px 16px;
+	z-index: 1000;
+	border-radius: 0 0 8px 8px;
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 1rem;
+	transition: top 0.2s;
+}
+.skip-link:focus {
+	top: 0;
+}
+
+.user-is-tabbing :focus {
+	outline: 2px solid #2563EB;
+	outline-offset: 2px;
+}
+/* Uma Musume Race Planner Theme */
+body { background: #F8FAFC; color: #212121; font-family: 'Inter', Arial, sans-serif; }
+.navbar { background: #2563EB; color: #FFFFFF; font-family: 'Poppins', Arial, sans-serif; }
+.header-banner { background: #2563EB; color: #FFFFFF; padding: 2rem 0; font-family: 'Poppins', Arial, sans-serif; }
+.logo { height: 48px; vertical-align: middle; margin-right: .5rem; }
+.plan-card { background: #FFFFFF; border: 1px solid #E5E7EB; border-radius: 12px; box-shadow: 0 2px 12px rgba(37,99,235,0.08); color: #212121; }
+.plan-stat-bars .stat-bar { display: inline-block; height: 8px; border-radius: 4px; margin-right: 8px; }
+.plan-stat-bars .stat-bar.speed { background: #2563EB; }
+.plan-stat-bars .stat-bar.stamina { background: #388E3C; }
+.plan-stat-bars .stat-bar.power { background: #D32F2F; }
+.plan-stat-bars .stat-bar.guts { background: #FFA000; }
+.plan-stat-bars .stat-bar.wit { background: #6B7280; }
+.badge { font-size: 0.95em; border-radius: 6px; padding: 0.35em 0.7em; font-family: 'Poppins', Arial, sans-serif; }
+.quick-stats-number { text-shadow: 0 2px 8px rgba(0,0,0,.1); }
+footer { opacity: .9; background: none; color: #6B7280; font-family: 'Inter', Arial, sans-serif; }
+.modal-content { background: #FFFFFF; color: #212121; border-radius: 16px; }
+
+/* MYDS Grid System (12-8-4) */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.row { display: flex; flex-wrap: wrap; margin-left: -12px; margin-right: -12px; }
+.col-12 { flex: 0 0 100%; max-width: 100%; padding: 0 12px; }
+.col-8 { flex: 0 0 66.6667%; max-width: 66.6667%; padding: 0 12px; }
+.col-4 { flex: 0 0 33.3333%; max-width: 33.3333%; padding: 0 12px; }
+.col-6 { flex: 0 0 50%; max-width: 50%; padding: 0 12px; }
+.col-3 { flex: 0 0 25%; max-width: 25%; padding: 0 12px; }
+@media (max-width: 1023px) {
+	.container { padding: 0 18px; }
+	.col-8, .col-4, .col-6, .col-3 { max-width: 100%; flex: 0 0 100%; }
+}

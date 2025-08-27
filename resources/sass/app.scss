@@ -1,0 +1,142 @@
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// MYDS Colors (Primitive & Tokens)
+$myds-blue: #2563EB;
+$myds-success: #388E3C;
+$myds-danger: #D32F2F;
+$myds-warning: #FFA000;
+$myds-gray: #6B7280;
+$myds-white: #FFFFFF;
+
+$bg-main: #F8FAFC;
+$bg-card: #FFFFFF;
+$bg-navbar: $myds-blue;
+$txt-main: #212121;
+$txt-muted: $myds-gray;
+
+// MYDS Typography
+$font-heading: 'Poppins', Arial, sans-serif;
+$font-body: 'Inter', Arial, sans-serif;
+
+// Override Bootstrap variables
+$primary: $myds-blue;
+$success: $myds-success;
+$danger: $myds-danger;
+$warning: $myds-warning;
+
+// MYDS Accessibility Styles
+.skip-link {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  background: $myds-blue;
+  color: $myds-white;
+  padding: 8px 16px;
+  z-index: 1000;
+  border-radius: 0 0 8px 8px;
+  font-family: $font-heading;
+  font-size: 1rem;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+.user-is-tabbing :focus {
+  outline: 2px solid $myds-blue;
+  outline-offset: 2px;
+}
+
+body {
+  background: $bg-main;
+  color: $txt-main;
+  font-family: $font-body;
+}
+
+.navbar {
+  background: $bg-navbar;
+  color: $myds-white;
+  font-family: $font-heading;
+}
+
+.header-banner {
+  background: $bg-navbar;
+  color: $myds-white;
+  padding: 2rem 0;
+  font-family: $font-heading;
+}
+
+.logo {
+  height: 48px;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+.plan-card {
+  background: $bg-card;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(37,99,235,0.08);
+  color: $txt-main;
+}
+
+.plan-stat-bars .stat-bar {
+  display: inline-block;
+  height: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.plan-stat-bars .stat-bar.speed { background: $myds-blue; }
+.plan-stat-bars .stat-bar.stamina { background: $myds-success; }
+.plan-stat-bars .stat-bar.power { background: $myds-danger; }
+.plan-stat-bars .stat-bar.guts { background: $myds-warning; }
+.plan-stat-bars .stat-bar.wit { background: $myds-gray; }
+
+.badge {
+  font-size: 0.95em;
+  border-radius: 6px;
+  padding: 0.35em 0.7em;
+  font-family: $font-heading;
+}
+
+.quick-stats-number {
+  text-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+footer {
+  opacity: .9;
+  background: none;
+  color: $txt-muted;
+  font-family: $font-body;
+}
+
+.modal-content {
+  background: $bg-card;
+  color: $txt-main;
+  border-radius: 16px;
+}
+
+// MYDS Grid System (12-8-4)
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.col-12 { flex: 0 0 100%; max-width: 100%; padding: 0 12px; }
+.col-8 { flex: 0 0 66.6667%; max-width: 66.6667%; padding: 0 12px; }
+.col-4 { flex: 0 0 33.3333%; max-width: 33.3333%; padding: 0 12px; }
+.col-6 { flex: 0 0 50%; max-width: 50%; padding: 0 12px; }
+.col-3 { flex: 0 0 25%; max-width: 25%; padding: 0 12px; }
+
+@media (max-width: 1023px) {
+  .container { padding: 0 18px; }
+  .col-8, .col-4, .col-6, .col-3 { max-width: 100%; flex: 0 0 100%; }
+}
