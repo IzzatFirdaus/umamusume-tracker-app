@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'izzatfirdaus/umamusume-tracker-app',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'f1f6880a778f82fc9ed50eec8a16f81a62ed7bfa',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -368,9 +368,9 @@
             ),
         ),
         'izzatfirdaus/umamusume-tracker-app' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'f1f6880a778f82fc9ed50eec8a16f81a62ed7bfa',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
